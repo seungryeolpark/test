@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-01-10T15:04:44.189Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="DtUXRaBonneXCSnblO7s" version="20.8.3" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-12T13:34:44.832Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="OozLP3HC4HshdxpwChRE" version="20.8.3" type="github">
   <diagram id="NeCs39wI6BxZ36_T76BO" name="페이지-1">
-    <mxGraphModel dx="474" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="472" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -19,13 +19,13 @@
         <mxCell id="A49DSCVe-X59VMN3Lkft-6" value="로그인 관리" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="130" y="585" width="70" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="A49DSCVe-X59VMN3Lkft-7" value="loginManager" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="A49DSCVe-X59VMN3Lkft-7" value="LoginManager" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="220" y="580" width="140" height="120" as="geometry" />
         </mxCell>
         <mxCell id="A49DSCVe-X59VMN3Lkft-8" value="String checkSignup&lt;br&gt;(member, checkFormat)" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="A49DSCVe-X59VMN3Lkft-7" vertex="1">
           <mxGeometry y="30" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="A49DSCVe-X59VMN3Lkft-9" value="" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="A49DSCVe-X59VMN3Lkft-7" vertex="1">
+        <mxCell id="A49DSCVe-X59VMN3Lkft-9" value="void sendCertMail&lt;br&gt;(String, String, String)" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="A49DSCVe-X59VMN3Lkft-7" vertex="1">
           <mxGeometry y="60" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="A49DSCVe-X59VMN3Lkft-10" value="Item 3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="A49DSCVe-X59VMN3Lkft-7" vertex="1">
@@ -40,7 +40,7 @@
         <mxCell id="A49DSCVe-X59VMN3Lkft-12" value="회원가입 값 검사" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="370" y="580" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="A49DSCVe-X59VMN3Lkft-13" value="Interface checkFormat" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=default;" parent="1" vertex="1">
+        <mxCell id="A49DSCVe-X59VMN3Lkft-13" value="abstract CheckFormat" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=default;" parent="1" vertex="1">
           <mxGeometry x="440" y="585" width="140" height="120" as="geometry">
             <mxRectangle x="440" y="585" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
@@ -53,6 +53,31 @@
         </mxCell>
         <mxCell id="A49DSCVe-X59VMN3Lkft-16" value="getMessage()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="A49DSCVe-X59VMN3Lkft-13" vertex="1">
           <mxGeometry y="90" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="x6rUOsaZ3hFFHcWKEZyJ-2" value="interface CertMailService" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="420" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="x6rUOsaZ3hFFHcWKEZyJ-3" value="Long createCert()" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="x6rUOsaZ3hFFHcWKEZyJ-2">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="x6rUOsaZ3hFFHcWKEZyJ-4" value="void sendMail&lt;br&gt;(EmailMessage, HTML)" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="x6rUOsaZ3hFFHcWKEZyJ-2">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="x6rUOsaZ3hFFHcWKEZyJ-9" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="x6rUOsaZ3hFFHcWKEZyJ-2" target="A49DSCVe-X59VMN3Lkft-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1" y="80" as="sourcePoint" />
+            <mxPoint x="-1" y="200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-20" y="80" />
+              <mxPoint x="-20" y="235" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x6rUOsaZ3hFFHcWKEZyJ-5" value="Item 3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="x6rUOsaZ3hFFHcWKEZyJ-2">
+          <mxGeometry y="90" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="x6rUOsaZ3hFFHcWKEZyJ-10" value="인증번호 이메일 보내기" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="510" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
